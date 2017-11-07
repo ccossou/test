@@ -26,8 +26,6 @@ import numpy as np
 import pdb
 import os
 
-import scipy.integrate
-
 def test_compute_flux(verbose=False):
     """
     Test flux of a point source for all the subarrays
@@ -50,7 +48,7 @@ if __name__ == '__main__':
         # read options
         for opt, value in optlist:
             if opt == '-h':
-                print "options -(h)elp, -(v)erbose"
+                print("options -(h)elp, -(v)erbose")
             if opt == '-v':
                 verbose=True
     test_compute_flux(verbose=verbose)
